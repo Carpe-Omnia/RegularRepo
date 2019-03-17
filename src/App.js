@@ -15,9 +15,6 @@ class App extends Component {
     this.props.actions.home();
   }
   render() {
-  //  var orientation = `${this.props.orientation.orientation}` ;
-    var orientation = `${this.props.orientation}` ;
-    console.log(this.props.orientation)
     return (
       <div className="App">
         <header className="App-header">
