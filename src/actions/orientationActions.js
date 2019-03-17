@@ -1,21 +1,22 @@
-export function move(direction){
+export function move(direction, z){
   return (
     {
       type: 'MOVE_ORIENTATION',
       payload: {
-        direction: direction
+        direction: direction,
+        z: z
       }
     }
   )
 }
 
 export function home(){
-  console.log("Home is being called");
   return (
     {
       type: 'DEFAULT_ORIENTATION',
       payload: {
-        orientation: [0,0]
+        orientation: [[0,0],[0,0][0,0]],
+        z: 0
       }
     }
   )
